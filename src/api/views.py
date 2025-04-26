@@ -67,7 +67,7 @@ class TodoViewSet(viewsets.ModelViewSet):
         creator = user if user.is_authenticated else None
         serializer.save(creator=creator)
 
-class ReadynessCheck(APIView):
+class ReadinessCheck(APIView):
     permission_classes = [AllowAny]  # Дозволяє доступ без перевірки прав
 
     def get(self, request):
